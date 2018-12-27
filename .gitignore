@@ -14,3 +14,6 @@ wdlap.exe
 go-bindata*
 err.txt
 deploy
+fcgui.cbp
+obj
+bin/Release/fcgui.exe
