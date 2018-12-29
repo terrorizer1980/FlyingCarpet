@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="MainFrame">
+		<size>400,600</size>
+		<id_arg>0</id_arg>
+		<object class="wxPanel" name="ID_PANEL2" variable="Panel2" member="yes">
+			<pos>0,0</pos>
+			<size>400,600</size>
+			<object class="wxBoxSizer" variable="BoxSizer1" member="yes">
+				<orient>wxVERTICAL</orient>
+				<object class="sizeritem">
+					<object class="wxBoxSizer" variable="BoxSizer2" member="yes">
+						<object class="sizeritem">
+							<object class="wxRadioBox" name="ID_RADIOBOX1" variable="RadioBox1" member="yes">
+								<label>Step 1: Select Peer OS</label>
+								<content>
+									<item>Linux</item>
+									<item>macOS</item>
+									<item>Windows</item>
+								</content>
+								<default>-1</default>
+							</object>
+							<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxRadioBox" name="ID_RADIOBOX2" variable="RadioBox2" member="yes">
+								<label>Step 2: Select Mode</label>
+								<content>
+									<item>Send</item>
+									<item>Receive</item>
+								</content>
+								<default>-1</default>
+							</object>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+					</object>
+					<flag>wxALL|wxEXPAND</flag>
+					<border>5</border>
+				</object>
+				<object class="sizeritem">
+					<object class="wxBoxSizer" variable="BoxSizer3" member="yes">
+						<orient>wxVERTICAL</orient>
+						<object class="sizeritem">
+							<object class="wxStaticBoxSizer" variable="StaticBoxSizer1" member="yes">
+								<label>Step 3: Select Files or Destination Folder</label>
+								<object class="sizeritem">
+									<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+										<label>Select File(s)...</label>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+								</object>
+								<object class="sizeritem">
+									<object class="wxButton" name="ID_BUTTON2" variable="Button2" member="yes">
+										<label>Select Folder...</label>
+										<hidden>1</hidden>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+								</object>
+								<object class="sizeritem">
+									<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="TextCtrl1" member="yes" />
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+							</object>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>5</border>
+						</object>
+						<object class="sizeritem">
+							<object class="wxButton" name="ID_BUTTON3" variable="Button3" member="yes">
+								<label>Start</label>
+							</object>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>5</border>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="OutputBox" member="yes">
+								<value>Welcome to Flying Carpet!</value>
+								<style>wxTE_MULTILINE</style>
+							</object>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxGauge" name="ID_GAUGE1" variable="Gauge1" member="yes">
+								<size>-1,20</size>
+								<hidden>1</hidden>
+								<style>wxGA_HORIZONTAL</style>
+							</object>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>5</border>
+						</object>
+					</object>
+					<flag>wxALL|wxEXPAND</flag>
+					<border>5</border>
+					<option>1</option>
+				</object>
+			</object>
+		</object>
+	</object>
+</wxsmith>

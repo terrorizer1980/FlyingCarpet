@@ -10,7 +10,7 @@
 #include "fcguiApp.h"
 
 //(*AppHeaders
-#include "fcguiMain.h"
+#include "MainFrame.h"
 #include <wx/image.h>
 //*)
 
@@ -23,10 +23,9 @@ bool fcguiApp::OnInit()
     wxInitAllImageHandlers();
     if ( wxsOK )
     {
-    	fcguiDialog Dlg(0);
-    	SetTopWindow(&Dlg);
-    	Dlg.ShowModal();
-    	wxsOK = false;
+    	MainFrame* Frame = new MainFrame(0);
+    	Frame->Show();
+    	SetTopWindow(Frame);
     }
     //*)
     return wxsOK;
