@@ -13,7 +13,7 @@ import (
 	"github.com/spieglt/flyingcarpet/core"
 )
 
-// Cli fulfills the UI interface to be used in the core functions
+// Cli fulfills the UI interface to be used in the core functions.
 type Cli struct{}
 
 // Output prints messages. It's a function to fulfill the UI interface from core.

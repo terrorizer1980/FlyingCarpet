@@ -16,5 +16,6 @@ err.txt
 deploy
 obj
 bin/Release/fcgui.exe
-*.cbp
 gui/fcgui/bin
+*.depend
+*.layout
